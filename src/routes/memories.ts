@@ -27,7 +27,6 @@ export async function memoriesRoutes(app: FastifyInstance) {
         createdAt: memory.createdAt,
       }
     })
-
   })
 
   app.get('/memories/:id', async (request, reply) => {
@@ -49,7 +48,6 @@ export async function memoriesRoutes(app: FastifyInstance) {
     }
 
     return memory
-
   })
 
   app.post('/memories', async (request) => {
@@ -72,7 +70,6 @@ export async function memoriesRoutes(app: FastifyInstance) {
     })
 
     return memory
-
   })
 
   app.put('/memories/:id', async (request, reply) => {
@@ -113,7 +110,6 @@ export async function memoriesRoutes(app: FastifyInstance) {
     })
 
     return memory
-
   })
 
   app.delete('/memories/:id', async (request, reply) => {
